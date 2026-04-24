@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministério Ágape</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFF8E1, #FFE0B2, #FFB74D);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    margin: 10px 0 0;
+    color: #2E2E2E;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+/* BUTTONS */
+.button {
+    background: linear-gradient(45deg, #F57C00, #E53935);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+}
+a {
+    color: #E53935;
+}
+</style>
+
+<script>
+function abrir(secao) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(secao).classList.add('active');
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<div id="home" class="section active">
+
+<div class="header">
+<img src="logo.png">
+<h1>Ministério Ágape</h1>
+</div>
+
+<div class="grid">
+
+<div class="button" onclick="abrir('quem')">Quem Somos</div>
+<div class="button" onclick="abrir('cultos')">Ver Cultos</div>
+<div class="button" onclick="abrir('podcast')">Podcast</div>
+<div class="button" onclick="abrir('programacao')">Programações</div>
+<div class="button" onclick="abrir('conferencia')">Conferências</div>
+<div class="button" onclick="abrir('departamentos')">Departamentos</div>
+<div class="button" onclick="abrir('voluntario')">Voluntário</div>
+<div class="button" onclick="abrir('aniversario')">Aniversariantes</div>
+<div class="button" onclick="abrir('oferta')">Oferta</div>
+<div class="button" onclick="abrir('cursos')">Cursos</div>
+<div class="button" onclick="abrir('pastor')">Pastor</div>
+<div class="button" onclick="abrir('missionaria')">Missionária</div>
+<div class="button" onclick="abrir('eventos')">Eventos</div>
+<div class="button" onclick="abrir('crescimento')">Crescimento</div>
+<div class="button" onclick="abrir('divulgue')">Divulgue Aqui</div>
+
+</div>
+
+<div class="footer">
+<a href="https://www.facebook.com/share/18TTYBvuq9/" target="_blank">Facebook</a>
+</div>
+
+</div>
+
+<!-- QUEM SOMOS -->
+<div id="quem" class="section">
+<h2>Quem Somos</h2>
+<p>Assembleia de Deus Ministério Ágape Porto da Pedra, localizada em São Gonçalo-RJ.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CULTOS -->
+<div id="cultos" class="section">
+<h2>Ver Cultos</h2>
+<p>Adicione seu canal do YouTube aqui.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- PROGRAMAÇÃO -->
+<div id="programacao" class="section">
+<h2>Programações</h2>
+<p>Domingo: Culto 18h</p>
+<p>Quarta: Culto 19h</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CONFERÊNCIA -->
+<div id="conferencia" class="section">
+<h2>Conferências</h2>
+<p>Eventos especiais da igreja.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- OFERTA -->
+<div id="oferta" class="section">
+<h2>Oferta de Amor</h2>
+<p><strong>PIX:</strong> 07438605000108</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CONTATO -->
+<div id="pastor" class="section">
+<h2>Fale com o Pastor</h2>
+<a href="https://wa.me/5521980194805" target="_blank">
+<button>Chamar no WhatsApp</button>
+</a>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+</body>
+</html><!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministério Ágape</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFF8E1, #FFE0B2, #FFB74D);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    margin: 10px 0 0;
+    color: #2E2E2E;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+/* BUTTONS */
+.button {
+    background: linear-gradient(45deg, #F57C00, #E53935);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+}
+a {
+    color: #E53935;
+}
+</style>
+
+<script>
+function abrir(secao) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(secao).classList.add('active');
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<div id="home" class="section active">
+
+<div class="header">
+<img src="logo.png">
+<h1>Ministério Ágape</h1>
+</div>
+
+<div class="grid">
+
+<div class="button" onclick="abrir('quem')">Quem Somos</div>
+<div class="button" onclick="abrir('cultos')">Ver Cultos</div>
+<div class="button" onclick="abrir('podcast')">Podcast</div>
+<div class="button" onclick="abrir('programacao')">Programações</div>
+<div class="button" onclick="abrir('conferencia')">Conferências</div>
+<div class="button" onclick="abrir('departamentos')">Departamentos</div>
+<div class="button" onclick="abrir('voluntario')">Voluntário</div>
+<div class="button" onclick="abrir('aniversario')">Aniversariantes</div>
+<div class="button" onclick="abrir('oferta')">Oferta</div>
+<div class="button" onclick="abrir('cursos')">Cursos</div>
+<div class="button" onclick="abrir('pastor')">Pastor</div>
+<div class="button" onclick="abrir('missionaria')">Missionária</div>
+<div class="button" onclick="abrir('eventos')">Eventos</div>
+<div class="button" onclick="abrir('crescimento')">Crescimento</div>
+<div class="button" onclick="abrir('divulgue')">Divulgue Aqui</div>
+
+</div>
+
+<div class="footer">
+<a href="https://www.facebook.com/share/18TTYBvuq9/" target="_blank">Facebook</a>
+</div>
+
+</div>
+
+<!-- QUEM SOMOS -->
+<div id="quem" class="section">
+<h2>Quem Somos</h2>
+<p>Assembleia de Deus Ministério Ágape Porto da Pedra, localizada em São Gonçalo-RJ.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CULTOS -->
+<div id="cultos" class="section">
+<h2>Ver Cultos</h2>
+<p>Adicione seu canal do YouTube aqui.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- PROGRAMAÇÃO -->
+<div id="programacao" class="section">
+<h2>Programações</h2>
+<p>Domingo: Culto 18h</p>
+<p>Quarta: Culto 19h</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CONFERÊNCIA -->
+<div id="conferencia" class="section">
+<h2>Conferências</h2>
+<p>Eventos especiais da igreja.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- OFERTA -->
+<div id="oferta" class="section">
+<h2>Oferta de Amor</h2>
+<p><strong>PIX:</strong> 07438605000108</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CONTATO -->
+<div id="pastor" class="section">
+<h2>Fale com o Pastor</h2>
+<a href="https://wa.me/5521980194805" target="_blank">
+<button>Chamar no WhatsApp</button>
+</a>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+</body>
+</html><!DO<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ministério Ágape</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #FFF8E1, #FFE0B2, #FFB74D);
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+    padding: 20px;
+}
+
+.header img {
+    width: 120px;
+    border-radius: 50%;
+}
+
+.header h1 {
+    margin: 10px 0 0;
+    color: #2E2E2E;
+}
+
+/* GRID */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 15px;
+}
+
+/* BUTTONS */
+.button {
+    background: linear-gradient(45deg, #F57C00, #E53935);
+    color: white;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* SECTION */
+.section {
+    display: none;
+    padding: 20px;
+}
+
+.active {
+    display: block;
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 15px;
+}
+a {
+    color: #E53935;
+}
+</style>
+
+<script>
+function abrir(secao) {
+    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+    document.getElementById(secao).classList.add('active');
+}
+</script>
+
+</head>
+
+<body>
+
+<!-- HOME -->
+<div id="home" class="section active">
+
+<div class="header">
+<img src="logo.png">
+<h1>Ministério Ágape</h1>
+</div>
+
+<div class="grid">
+
+<div class="button" onclick="abrir('quem')">Quem Somos</div>
+<div class="button" onclick="abrir('cultos')">Ver Cultos</div>
+<div class="button" onclick="abrir('podcast')">Podcast</div>
+<div class="button" onclick="abrir('programacao')">Programações</div>
+<div class="button" onclick="abrir('conferencia')">Conferências</div>
+<div class="button" onclick="abrir('departamentos')">Departamentos</div>
+<div class="button" onclick="abrir('voluntario')">Voluntário</div>
+<div class="button" onclick="abrir('aniversario')">Aniversariantes</div>
+<div class="button" onclick="abrir('oferta')">Oferta</div>
+<div class="button" onclick="abrir('cursos')">Cursos</div>
+<div class="button" onclick="abrir('pastor')">Pastor</div>
+<div class="button" onclick="abrir('missionaria')">Missionária</div>
+<div class="button" onclick="abrir('eventos')">Eventos</div>
+<div class="button" onclick="abrir('crescimento')">Crescimento</div>
+<div class="button" onclick="abrir('divulgue')">Divulgue Aqui</div>
+
+</div>
+
+<div class="footer">
+<a href="https://www.facebook.com/share/18TTYBvuq9/" target="_blank">Facebook</a>
+</div>
+
+</div>
+
+<!-- QUEM SOMOS -->
+<div id="quem" class="section">
+<h2>Quem Somos</h2>
+<p>Assembleia de Deus Ministério Ágape Porto da Pedra, localizada em São Gonçalo-RJ.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CULTOS -->
+<div id="cultos" class="section">
+<h2>Ver Cultos</h2>
+<p>Adicione seu canal do YouTube aqui.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- PROGRAMAÇÃO -->
+<div id="programacao" class="section">
+<h2>Programações</h2>
+<p>Domingo: Culto 18h</p>
+<p>Quarta: Culto 19h</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CONFERÊNCIA -->
+<div id="conferencia" class="section">
+<h2>Conferências</h2>
+<p>Eventos especiais da igreja.</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- OFERTA -->
+<div id="oferta" class="section">
+<h2>Oferta de Amor</h2>
+<p><strong>PIX:</strong> 07438605000108</p>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+<!-- CONTATO -->
+<div id="pastor" class="section">
+<h2>Fale com o Pastor</h2>
+<a href="https://wa.me/5521980194805" target="_blank">
+<button>Chamar no WhatsApp</button>
+</a>
+<button onclick="abrir('home')">Voltar</button>
+</div>
+
+</body>
+</html>CTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Snake</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <canvas id="canvas"></canvas>
+  <script src="render.js"></script><!-- defines canvas, ctx, draw() -->
+  <script src="input.js"></script><!-- attaches keyboard + touch listeners -->
+  <script src="game.js"></script> <!-- state, loop, boot -->
+
+</body>
+</html>
